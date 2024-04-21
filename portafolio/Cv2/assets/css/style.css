@@ -1,0 +1,159 @@
+.fondo {
+  background-color: (
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+/* Texto NavBar */
+.neon {
+  position: relative;
+  overflow: hidden;
+  filter: brightness(200%);
+}
+
+.text {
+  background-color:  #000;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.text::before {
+  content: attr(data-text);
+  position: absolute;
+  color: white;
+  filter: blur(0.02em);
+  mix-blend-mode: difference;
+}
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(45deg, red, gold, rgb(150, 144, 238), gold, red);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: multiply;
+}
+
+.spotlight {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, white, transparent 25%) center / 25% 25%,
+    radial-gradient(circle, white, black 25%) center / 12.5% 12.5%;
+  animation: light 5s linear infinite;
+  mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+  to {
+    transform: translate(50%, 50%);
+  }
+}
+
+.rounded-circle {
+    margin-top: 35px;
+    width: 200px;
+    height: 150px;
+    border-color: yellow;
+    border: 5px;
+}
+
+
+.titulo {
+  background-color: #004173;
+  height: 7em;
+  margin-top: 50px;
+}
+
+.card {
+  border: 5px solid rgb(255, 215, 0);
+  width: 1349px;
+  margin: auto;
+}
+
+.btn {
+  border: 2px solid rgb(255, 215, 0);
+}
+
+img {
+  border: 1px solid rgb(27, 21, 217);
+  width: 210px;
+}
+
+h2 {
+  background-color: #0979b0;
+  width: 90%;
+  margin: auto;
+}
+
+h3 {
+  background-color: #0979b0;
+  width: 90%;
+  margin: auto;
+}
+h4 {
+  background-color: #0979b0;
+  width: 90%;
+  margin: auto;
+}
+
+.resumen {
+  width: 90%;
+  margin: auto;
+}
+
+ol {
+  width: 90%;
+  margin: auto;
+}
+ul {
+  width: 90%;
+  margin: auto;
+}
+
+table {
+  width: 80%;
+  margin: auto;
+  border-collapse: collapse;
+  border: 2px solid #000;
+}
+
+td,
+th {
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+th {
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+td {
+  height: 20em;
+  text-align: center;
+  border-bottom: 2px solid #111;
+  color: #333;
+  font-size: 18px;
+}
+
+iframe {
+  height: 20em;
+  width: 15em;
+}
+
+footer {
+  width: 100%;
+  margin: auto;
+}

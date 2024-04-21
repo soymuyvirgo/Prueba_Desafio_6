@@ -1,0 +1,194 @@
+header{
+  margin-top: 50px;
+}
+/* Texto NavBar */
+.neon {
+  position: relative;
+  overflow: hidden;
+  filter: brightness(200%);
+}
+
+.text {
+  background-color:  #000;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.text::before {
+  content: attr(data-text);
+  position: absolute;
+  color: white;
+  filter: blur(0.02em);
+  mix-blend-mode: difference;
+}
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(45deg, red, gold, rgb(150, 144, 238), gold, red);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: multiply;
+}
+
+.spotlight {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, white, transparent 25%) center / 25% 25%,
+    radial-gradient(circle, white, black 25%) center / 12.5% 12.5%;
+  animation: light 5s linear infinite;
+  mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+  to {
+    transform: translate(50%, 50%);
+  }
+}
+
+.rounded-circle {
+    margin-top: 35px;
+    width: 200px;
+    height: 150px;
+    border-color: yellow;
+    border: 5px;
+}
+
+
+
+/* Seccion Datos*/
+
+#datos .card {
+    background-image: url(../imgs/fondo1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/*iconos acerca de mi*/
+
+/*perfil*/
+.iconPerfil {
+  animation-name: mover;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes mover {
+  0% {transform: translatex(0);}
+  50% {transform: translatex(100px);}
+  100% {transform: translatex(0);}
+}
+
+/*Desarrollo*/
+.desarrollo{
+  animation-name: escalar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes escalar {
+  0% {transform: scale(0);}
+  50% {transform: scale(1.5);}
+  100% {transform: scale(1);}
+
+}
+
+/*Seguridad*/
+.seguridad{
+  animation-name: parpadeo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;  
+}
+@keyframes parpadeo{
+  0% {opacity: 1;}
+  50% {opacity: 0;}
+  100% {opacity: 1;}
+  
+}
+
+/* Mis trabajos */
+
+#Mis-trabajos .image-top {
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Portafolio*/
+
+.carousel-inner {
+  object-fit: scale-down;
+  height: 60vh;
+  width: 100%;
+}
+
+.carousel-control-prev-icon::before {
+  content: '<';
+  color: red;
+  font-size: 40px;
+
+}
+
+.carousel-control-next-icon::before {
+  content: '>';
+  color: red;
+  font-size: 40px;
+}
+
+/* Contacto */
+
+#Contacto form label {
+  font-weight: 700;
+  color: #373a3c;
+}
+
+@media (max-width: 768px) {
+  #Contacto form label {
+    font-weight: 400;
+  }
+
+  .navbar-brand {
+    width: 100px;
+  }
+}
+
+.icon-contacto {
+  display: flex;
+  justify-content: space-around;
+  font-size: 30px;
+  color: #000;
+  margin-top: 50px;
+  gap: 30px;
+}
+
+.icon-contacto div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  margin-top: 30px;
+}
+
+.icon-f {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: beige;
+}
+
+
+

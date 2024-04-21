@@ -1,0 +1,159 @@
+body {
+  background-color: black;
+  padding: 0%;
+  margin: 0%;
+}
+/* Texto NavBar */
+.neon {
+  position: relative;
+  overflow: hidden;
+  filter: brightness(200%);
+}
+
+.text {
+  background-color:  #000;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.text::before {
+  content: attr(data-text);
+  position: absolute;
+  color: white;
+  filter: blur(0.02em);
+  mix-blend-mode: difference;
+}
+
+.gradient {
+  position: absolute;
+  background: linear-gradient(45deg, red, gold, rgb(150, 144, 238), gold, red);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  mix-blend-mode: multiply;
+}
+
+.spotlight {
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle, white, transparent 25%) center / 25% 25%,
+    radial-gradient(circle, white, black 25%) center / 12.5% 12.5%;
+  animation: light 5s linear infinite;
+  mix-blend-mode: color-dodge;
+}
+
+@keyframes light {
+  to {
+    transform: translate(50%, 50%);
+  }
+}
+
+header {
+  margin-top: 60px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 221;
+  font-display: 59;
+}
+
+.cuerpo {
+  background-image: url("../imgs/bg-header.jpg");
+  position: relative;
+  width: 100%;
+  height: 727px;
+  opacity: 1;
+}
+
+.texto1 {
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 76px 150px 75px 150px;
+}
+
+.texto {
+  width: 475px;
+  height: 197px;
+}
+
+.img1 {
+  width: 399px;
+  height: 237px;
+}
+
+.iconos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Raleway", sans-serif;
+  background-color: #1e1a13;
+  width: 100%;
+  height: 48.33%;
+}
+
+h2 {
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+.icon {
+  display: flex;
+  justify-content: space-around;
+  color: #ffffff;
+  gap: 30px;
+}
+.icon div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fa-eye,
+.fa-hand-peace,
+.fa-paintbrush {
+  font-size: 2em;
+}
+
+.imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imgen {
+  width: 316px;
+  height: 202px;
+  margin: 150px 73px 73px;
+}
+
+footer {
+  display: flex;
+  background: #1e1a13;
+  justify-content: center;
+}
+
+.final {
+  text-align: center;
+  font-family: "Raleway", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  padding-top: 3rm;
+  color: #ffffff;
+}
